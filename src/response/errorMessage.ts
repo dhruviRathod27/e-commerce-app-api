@@ -16,4 +16,9 @@ export const ErrorMessage: any = {
     ORDER_NOT_FOUND: 'Product not found',
     ORDER_NOT_CREATED: 'Product not created',
 
+    // * Auth
+    USER_LOGIN_ERROR : 'Invalid credential',
+    USER_EXISTS_ERROR: 'User already exists',
+    USER_REGISTER_ERROR: 'User registration error'
+
 }

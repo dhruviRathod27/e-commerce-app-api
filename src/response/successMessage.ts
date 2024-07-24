@@ -9,4 +9,9 @@ export const SuccessMessages:any = {
     // * ORDER
     ORDER_CREATED: 'Order created successfully',
     ORDER_FETCHED: 'Order fetched successfully',
+    
+
+    // * Auth
+    USER_LOGIN_SUCCESS : 'User logged in successfully',
+    USER_REGISTER_SUCCESS : 'User registered successfully'
 }
