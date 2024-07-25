@@ -10,7 +10,7 @@ const query: Query = new Query();
 
 export class AuthService extends Query {
 
-    // * Create User
+    // * Create Login
     public login = async (reqData: any) => {
         try {
             console.log('# AuthService - > login start');

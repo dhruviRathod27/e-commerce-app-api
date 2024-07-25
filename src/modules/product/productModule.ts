@@ -25,16 +25,6 @@ const productSchema = new Schema({
   },
   price:
   {
-    // value: {
-    //     type: Number,
-    //     required: true
-    // },
-    // unit: {
-    //     type: String,
-    //     required: true,
-    //     default: 'rs',
-    //     enum: ['rs'],
-    // }
     type: Number,
     required: true
   },
