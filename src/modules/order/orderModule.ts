@@ -13,6 +13,11 @@ const orderSchema = new Schema({
     type: String,
     required: true,
   },
+  customerId:
+  {
+    type: String,
+    required: true,
+  },
   totalQuantity:
   {
     type: Number,

@@ -14,7 +14,7 @@ export class AuthService extends Query {
     public login = async (reqData: any) => {
         try {
             console.log('# AuthService - > login start');
-            const { username, password } = reqData;
+            const { username, password , role} = reqData;
             const user = await userModel.findOne({ username }) as IUser;
             if (!user) {
                 return '';
@@ -23,7 +23,7 @@ export class AuthService extends Query {
             if (!isMatch) {
                 return '';
             }
-            const token = jwt.sign({ userId: user._id }, 'your_jwt_secret', { expiresIn: '1h' });
+            const token = jwt.sign({ userId: user._id,username : user.username, role: role }, 'your_jwt_secret', { expiresIn: '1h' });
             console.log('# AuthService - > login -> token: ', token);
             return token;
         } catch (error) {
